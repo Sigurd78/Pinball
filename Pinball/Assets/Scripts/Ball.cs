@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
 {
     [Header("Set Dynamically")]
     public Text scoreGT;
+    public static float bottomY = -20f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,14 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y < bottomY)
+        {
+            Destroy(this.gameObject);
+
+           // ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
+           // apScript.AppleDestroyed();
+
+        }
     }
 
 
