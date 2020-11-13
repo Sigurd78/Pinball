@@ -57,6 +57,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Flipper.cs" />
     <Compile Include="Assets\TunnelGoal.cs" />
+    <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\HighScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
