@@ -11,7 +11,9 @@ public class Ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject scoreGO = GameObject.Find("ScoreCounter");
+        scoreGT = scoreGO.GetComponent<Text>();
+        scoreGT.text = "0";
     }
 
     // Update is called once per frame
@@ -26,10 +28,9 @@ public class Ball : MonoBehaviour
         GameObject collidedWith = coll.gameObject;
         if (collidedWith.tag == "Bumper")
         {
-            Destroy(collidedWith);
 
             int score = int.Parse(scoreGT.text);
-            score += 50;
+            score += 20;
             scoreGT.text = score.ToString();
 
             if (score > HighScore.score)
@@ -40,10 +41,9 @@ public class Ball : MonoBehaviour
 
         if (collidedWith.tag == "Tunnel")
         {
-            Destroy(collidedWith);
 
             int score = int.Parse(scoreGT.text);
-            score += 100;
+            score += 50;
             scoreGT.text = score.ToString();
 
             if (score > HighScore.score)

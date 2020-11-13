@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 811, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 86
+  controlID: 15
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 19
+  controlID: 56
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -449,21 +449,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\natef\Documents\GitHub\Pinball\Pinball
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e380000
-    m_LastClickedID: 14446
-    m_ExpandedIDs: 00000000fa370000fc370000fe370000003800000238000000ca9a3b
+    m_SelectedIDs: 78380000
+    m_LastClickedID: 14456
+    m_ExpandedIDs: 000000001c3800001e38000020380000223800002438000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,7 +491,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa370000fc370000fe3700000038000002380000
+    m_ExpandedIDs: 000000001c3800001e380000203800002238000024380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -604,7 +604,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1105.6001
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
@@ -646,9 +646,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -8.52414, y: -20.798565, z: 69.43467}
+    m_Target: {x: -7.9376936, y: -8.675746, z: 72.83635}
     speed: 2
-    m_Value: {x: -8.52414, y: -20.798565, z: 69.43467}
+    m_Value: {x: -7.9376936, y: -8.675746, z: 72.83635}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -697,11 +697,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.13257356, y: 0.0588499, z: -0.007885191, w: -0.9894069}
     speed: 2
-    m_Value: {x: -0.13401847, y: 0.06328797, z: -0.008576522, w: -0.9889187}
+    m_Value: {x: -0.13257176, y: 0.0588491, z: -0.007885084, w: -0.9893934}
   m_Size:
-    m_Target: 45.941826
+    m_Target: 46.477116
     speed: 2
-    m_Value: 43.96347
+    m_Value: 46.477116
   m_Ortho:
     m_Target: 0
     speed: 2
