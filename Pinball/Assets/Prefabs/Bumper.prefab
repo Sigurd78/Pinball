@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6912725745075180641}
   - component: {fileID: 2283035902447138396}
   - component: {fileID: 1040006715957891433}
+  - component: {fileID: 2458295729899706470}
   m_Layer: 0
   m_Name: Bumper
   m_TagString: Bumper
@@ -96,3 +97,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!122 &2458295729899706470
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3177337215126804138}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4283367413
+  m_Size: 2

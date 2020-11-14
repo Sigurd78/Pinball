@@ -24,6 +24,8 @@ public class Ball : MonoBehaviour
         {
             Destroy(this.gameObject);
 
+
+
            // ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
            // apScript.AppleDestroyed();
 
@@ -38,7 +40,7 @@ public class Ball : MonoBehaviour
         {
 
             int score = int.Parse(scoreGT.text);
-            score += 20;
+            score += 100;
             scoreGT.text = score.ToString();
 
             if (score > HighScore.score)
@@ -47,11 +49,11 @@ public class Ball : MonoBehaviour
             }
         }
 
-        if (collidedWith.tag == "Tunnel")
+        if (coll.gameObject.tag == "Tunnel")
         {
 
             int score = int.Parse(scoreGT.text);
-            score += 50;
+            score += 250;
             scoreGT.text = score.ToString();
 
             if (score > HighScore.score)
