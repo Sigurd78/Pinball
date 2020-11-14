@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
 {
     [Header("Set Dynamically")]
     public Text scoreGT;
+    public Text countGT;
     public static float bottomY = -20f;
 
     // Start is called before the first frame update
@@ -15,6 +16,10 @@ public class Ball : MonoBehaviour
         GameObject scoreGO = GameObject.Find("ScoreCounter");
         scoreGT = scoreGO.GetComponent<Text>();
         scoreGT.text = "0";
+
+        GameObject countGO = GameObject.Find("BallCounter");
+        countGT = countGO.GetComponent<Text>();
+        countGT.text = "5";
     }
 
     // Update is called once per frame
@@ -60,6 +65,17 @@ public class Ball : MonoBehaviour
             {
                 HighScore.score = score;
             }
+        }
+        if (coll.gameObject.tag == "Rujnuj")
+        {
+            /*
+            int pinballCount = int.Parse(countGT.text);
+            pinballCount -= 1;
+            countGT.text = pinballCount.ToString();
+            */
+
+            BallCount.pinballCount -= 1;
+            
         }
 
     }

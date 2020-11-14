@@ -58,9 +58,10 @@
     <Compile Include="Assets\Scripts\Rujnuj.cs" />
     <Compile Include="Assets\Scripts\Flipper.cs" />
     <Compile Include="Assets\TunnelGoal.cs" />
+    <Compile Include="Assets\PlungerScript.cs" />
     <Compile Include="Assets\Scripts\HighScore.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
-    <Compile Include="Assets\PlungerScript.cs" />
+    <Compile Include="Assets\Scripts\BallCount.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
