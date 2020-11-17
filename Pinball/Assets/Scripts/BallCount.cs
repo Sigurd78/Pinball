@@ -16,12 +16,12 @@ public class BallCount : MonoBehaviour
     void Awake()
     {                                                           // a
         // If the PlayerPrefs HighScore already exists, read it
-        if (PlayerPrefs.HasKey("BallCounter"))
+        if (PlayerPrefs.HasKey("BallCount"))
         {                               // b
-            pinballCount = PlayerPrefs.GetInt("BallCounter");
+            pinballCount = 5;
         }
         // Assign the high score to HighScore
-        PlayerPrefs.SetInt("BallCounter", pinballCount);                              // c
+        PlayerPrefs.SetInt("BallCount", pinballCount);                              // c
     }
 
 
@@ -31,9 +31,9 @@ public class BallCount : MonoBehaviour
         Text gt = this.GetComponent<Text>();
         gt.text = "Balls Left: " + pinballCount;
 
-        if (pinballCount < PlayerPrefs.GetInt("BallCounter"))
+        if (pinballCount < PlayerPrefs.GetInt("BallCount"))
         {                       // d
-            PlayerPrefs.SetInt("BallCounter", pinballCount);
+            PlayerPrefs.SetInt("BallCount", pinballCount);
         }
 
 

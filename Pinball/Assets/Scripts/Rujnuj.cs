@@ -6,7 +6,7 @@ public class Rujnuj : MonoBehaviour
 {
     public Transform spawnpoint;
     public GameObject ballPrefab;
-    public int Balls = 4;
+    public int Balls = 5;
 
     /*private void Awake()
     {
