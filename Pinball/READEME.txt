@@ -1,0 +1,97 @@
+==========GAME DESIGN==========
+The game starts at a start menu, which allows the player to 
+jump right into the game, look at the controls, or quit the
+game immediately. The instruction menu also has the options to quit
+and start the game, so that the player doesn't have to go back
+to the start menu. 
+The pinball game starts with the ball in an alley, and once the 
+ball rolls to the launching area at the front of the board, the 
+player must hold down the space bar to build up launch power.
+Once the space bar is released, the ball launches at the correlating
+power into the actual playing area. There are arches and bumpers (with
+lights) that give the player a certain number of points, and four flippers
+(2 flippers on each side of the board) that use hinge joints and 
+anchors to hit the ball. Once the ball touches the gap at the front 
+of the board, the ball is destroyed and the player loses all collected 
+points (so that it's not too easy to beat the high score since the
+player can only use one ball to beat it.) A new ball is spawned, and 
+the process repeats until the player is out of balls. The number of 
+balls that the player has left is displayed under the high score.
+Once the player is out of balls, they are directed to the game over
+screen, where they can quit or play again. 
+
+
+==========COMPLEXITY==========
+So this project might not *seem* very complex at first glance,
+but I had incorporated numerous features that the class has
+never even touched upon yet. I had a slider that displays 
+the launch power of the ball, which increases the longer the 
+player holds down the launch button. The flippers were another
+feature that I considered complex, since not only was I working
+with a hinge joint for each one, but I had to struggle with 
+getting the anchors and angles of each flipper to work the way 
+I needed them to. I also started working with physics materials
+before they were ever even mentioned in class.
+This project may have worked with some things that the class has 
+covered before, but I am proud of what I taught myself how to do
+over the course of developing this simple pinball game.
+
+==========LESSONS LEARNED & OBSTACLES FACED=========
+I learned pretty quickly to make the first commit to the repository ASAP
+so you can go back to it when you mess up. I accidentally broke the ball
+and two of the flippers and didn't know what I did to break that. I regretted
+not having a previous version to fall back on. I learned a lot about the slider
+in GUI and the physics behind hinges and anchors. We had never worked with those
+components before and I feel like I could find ways to incorporate them into
+Group Project #2! 
+
+I struggled a lot with this project, but I was too stubborn to change my idea.
+I already mentioned my problem where I didn't start using version control 
+until it was too late. But I had a bunch of other problems as well. First of
+all, the ball would always drift left no matter what I did. I tried everything
+I could think of, but it would always slide to the left no matter what I 
+changed. Eventually, adding a physics material stopped the sliding, but then
+the ball would launch off the table and out of view. I turned up the friction
+and fixed the problem, even if it made the ball a bit slow. 
+I also had problems with destroying the ball and keeping correct count of the
+number of balls that the player had left. The ball would never get destroyed
+so I was about to just have the ball fall off the board and delete itself at 
+a certain Y-value, but I eventually just had the ball delete itself when it hits
+a small area and spawn a new ball at a empty game object whenever a ball is 
+destroyed. The ball counter kept keeping count of the number of remaining balls
+starting from whatever the number was left at in the previous test. I struggled
+with this problem for a long time, before realizing the solution in the middle of
+the night when I was trying to sleep. I had based the ball counter code off of
+the HighScore code from ApplePicker, which kept count of whatever the high score
+was in previous playthroughs of the game. I just had to delete that part of the
+ball counter code and it hasn't been a problem since. 
+I tried moving the camera so it'd be at an angle with the whole board within
+view, but then the GUI wouldn't move with it, and changing the angle of the
+GUI just made things worse because it refused to line up with the camera. I
+eventually had to give up and left the camera at a horizontal viewpoint.
+
+===========PEER REVIEWS==========
+Liam: When trying to launch the ball, I didn't give it enough force
+to actually move it very far, which was kinda funny. I wish the camera 
+was a bit higher but I don't know much about coding or game-making so
+maybe that'd mess up the ball's spawn point or something. I wish the points
+would keep building up across multiple attempts but I respect the reason
+behind not doing that. I like that the colors of the hoops, ball, and 
+doo-thingies (Liam is referring to the lit up bumpers) pop out, it 
+makes it easy to keep track of them. 8/10, was a pretty enjoyable game
+to play. It's no God of War, but still fun!!
+
+Janet: I don't like how the colors of some of the objects clash with the 
+wooden aesthetic of the board. Hitting the ball feels *really* satisfying,
+but the ball is slow most of the time and loses all momentum once it hits 
+anything. I wish the camera was tilted a bit to see the board better, but
+from my personal experience with Unity, that would make the GUI look like
+it's on an angle, which I personally don't know how I would fix. I really
+liked playing it, though!! I can see how much work you put into this!!
+
+Devin: No Bill. 3/10
+(Nathan's Note: I was originally going to have a secret where a model of
+a video character named Bill would appear if the player hit an exact number
+of points, but I was crunched for time and the feature never made it in. Devin
+was very disappointed by this. Also, Devin never played the game. She just 
+was reacting when Liam got to the score to summon Bill and he didn't appear.)
